@@ -62,7 +62,7 @@
 </v-layout>
 
   <v-layout class="d-flex " rounded="">
-    <img class="operator" src="../assets/img/operator.jpg" alt="">
+    <img class="operator hidden-sm-and-down" src="../assets/img/operator.jpg" alt="">
     <div color="#F9F8F7" class="operator d-flex align-center justify-center">
       <v-card width="500px" height="500px" class="d-flex flex-column pa-5 justify-space-evenly">
         <v-card-title>Yordam kerakmi?</v-card-title>
@@ -149,5 +149,12 @@ export default {
 #send:active{
   background-color:#B5976E;
   color: white;
+}
+
+
+@media screen and (max-width: 980px) {
+  .operator{
+    width: 100%;
+  }
 }
 </style>
